@@ -17,7 +17,7 @@ function App() {
 
     try {
       const { data } = await axios.post(
-        'http://127.0.0.1:8000/api/complete/',
+        'http://django-ai-alb-1302229998.us-east-1.elb.amazonaws.com/api/complete/',
         { prompt },
         { headers: { 'Content-Type': 'application/json' } }
       );
